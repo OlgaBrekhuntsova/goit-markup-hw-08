@@ -1,0 +1,38 @@
+/* FOOTER SIGN-FORM */
+.form-sign-input-wrapper {
+  display: flex;}
+
+.form-sign-label {
+display: block;}
+
+.form-sign-input {
+display: block;
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+outline: none;
+padding-left: 16px;
+background-color: transparent;
+&, 
+&::placeholder {
+ font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: $text-dark-theme-color;
+  }
+}
+
+  .form-sign-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+  }
+  .sign-btn-send-icon {
+    width: 24px;
+    height: 24px;
+    fill: $title-dark-theme-color;
+    margin-left: 10px;
+  } 

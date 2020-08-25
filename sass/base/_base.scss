@@ -1,0 +1,26 @@
+html {
+               box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+              box-sizing: inherit;
+  }
+
+  img {
+    display: block;
+  }
+
+button:hover,
+button:focus,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+label:hover,
+label:focus {
+cursor: pointer;
+}
+
+  

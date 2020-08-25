@@ -1,0 +1,5 @@
+@mixin animation ($td: $transition-time, $ttf: $transition-function, $td: 0ms) {
+transition-duration: $td;
+transition-timing-function: $ttf;
+transition-delay: $td;
+}

@@ -1,0 +1,53 @@
+/*SPECIALIZATION SECTION*/
+.specialization {
+  .container {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  .title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-light-theme-color;
+  }
+  .subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: $title-dark-theme-color;
+    background-color: $background-dark-theme-color;
+     transition-property: background-color;
+     @include animation ();
+        }
+  }
+  
+  .specialization-list {
+    display: flex;
+            align-items: center;
+            justify-content: space-between;
+  }
+  .specialization-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .specialization-list-item-link {
+  position: relative;
+      
+  &:hover .subtitle,
+  &:focus .subtitle {
+      background-color: rgba(33, 150, 243, 0.9);      
+    }
+  }

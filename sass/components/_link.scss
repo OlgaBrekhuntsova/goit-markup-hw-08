@@ -1,0 +1,9 @@
+.link {
+    display: block;
+    font-style: normal;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      }
+  }

@@ -1,0 +1,17 @@
+%form-input-comment {
+display: block;
+ width: 100%;
+border: 1px solid rgba(33, 33, 33, 0.2);
+ border-radius: 4px;
+ outline: none;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.01em;
+ color: $text-light-theme-color;
+ transition-property: border; 
+ @include animation ();
+}
+
+%form-input-comment-hover {
+    border: 1px solid $accent-color;
+}

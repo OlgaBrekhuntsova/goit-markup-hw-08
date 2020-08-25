@@ -1,0 +1,95 @@
+/*HEADER*/
+  .header {
+    .container {
+     display: flex;
+            align-items: center;
+         justify-content: space-between;
+     }
+     .logo {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 85px;
+      color: $title-light-theme-color;
+      }
+      }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+    .nav-list-link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-light-theme-color;
+      transition-property: color;
+      @include animation ();
+              }
+
+        .current { 
+          color: $accent-color;
+        &::after {
+          position: absolute;
+          bottom: 0;
+          display: block;
+          content: "";
+          width: 100%;
+          height: 4px;
+         background: $accent-color;
+          border-radius: 2px;
+                }
+              }
+        
+  .header-adress-list {
+    display: flex;
+            align-items: center;
+  }
+  .header-adress-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header-adress-list-item-link {
+    display: flex;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-light-theme-color;
+    transition-property: color;
+    @include animation ();
+            .mail {
+              width: 16px;
+              height: 11px;
+            }
+            .mob {
+              width: 10px;
+              height: 15px;
+            }   }
+ 
+  .header-adress-icon {
+    margin-right: 10px;
+    fill: $text-light-theme-color;
+    transition-property: fill;
+    @include animation ();
+
+            .header-adress-list-item-link:hover &,
+            .header-adress-list-item-link:focus & {
+              fill: $accent-color;
+                }
+  } 
+
+  
+ 

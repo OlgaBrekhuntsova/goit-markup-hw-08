@@ -1,0 +1,121 @@
+ /* CONTACT FORM */
+ .contact-form {
+            display: flex;
+             justify-content: center;
+             flex-direction: column;
+
+     .modal-btn {
+              margin-left: auto;
+              margin-right: auto;
+
+      &:hover,
+      &:focus {
+            background:#188CE8;
+            }
+          }
+    }
+  .contact-form-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $title-light-theme-color;
+  }
+  
+  .modal-form-input-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+
+  .name {
+    text-transform: capitalize;
+    }
+  }
+  
+  .form-input {
+  @extend %form-input-comment;
+  height: 40px;
+  padding-left: 42px;
+    &:focus,
+  &:hover,
+  &:not(:placeholder-shown) {
+    @extend %form-input-comment-hover;
+  }
+  }
+  
+.form-comment {
+  @extend %form-input-comment;
+    height: 120px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    resize: none;
+    &:focus,
+  &:hover,
+  &:not(:placeholder-shown) {
+   @extend %form-input-comment-hover;
+  }
+
+   &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $text-light-theme-color;
+    }
+       }
+
+    .form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+              transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $text-light-theme-color;
+      transition-property: transform, color, font-size;
+      @include animation ();
+  .form-input:focus + &,
+  .form-input:not(:placeholder-shown) + & {
+   color: $accent-color;
+   transform: translate(-26px, -39px);
+     font-size: 12px;
+     }
+  }
+  
+  .form-label-icon {
+    position: absolute;
+    left: 16px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $title-light-theme-color;
+    transition-property: fill;
+    @include animation ();
+
+    .form-input:focus ~ &,
+    .form-input:not(:placeholder-shown) ~ & {
+     fill: $svg-color-accent;
+    }
+    }
+          
+    .form-agreement-label {
+     display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+   justify-content: center;
+  }
+  
+      .agreement {
+  line-height: 1.71px;
+  
+   a {
+    color: $accent-color;
+  }
+}
+ 

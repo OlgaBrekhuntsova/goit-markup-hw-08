@@ -1,0 +1,43 @@
+/*HERO SECTION*/
+.hero {
+    background-color: $background-dark-theme-color;
+       background-image: linear-gradient(
+        $background-dark-theme-color,
+        $background-dark-theme-color
+      ),
+      url("../images/hero/hero.jpg");
+    max-width: 1600px;
+    min-width: 1200px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+    .container {
+     padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+  }
+  .modal-btn:hover,
+  .modal-btn:focus {
+  background:#188CE8;
+  }
+}  
+  .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+  }
+
+ 
+

@@ -1,0 +1,73 @@
+/*FOOTER*/
+.footer {
+    background-color: #2f303a;
+    min-width: 1200px;
+  
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .title {
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+  }
+  .logo {
+    color: $title-dark-theme-color;
+  }
+}
+  .footer-contact {
+    margin-right: 69px;
+  }
+  .footer-contact-logo {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .footer-contact-adress-list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+ 
+  .footer-contact-adress-list-item-link {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-dark-theme-color;
+    transition-property: color;
+    @include animation ();
+          &:hover,
+          &:focus {
+            color: $accent-color;
+          }
+  }
+  .footer-contact-adress-list-item-link.map {
+    color: $title-dark-theme-color;
+   &:hover,
+ &:focus {
+      color: $accent-color;
+    }
+   }
+  
+  .footer-social {
+    margin-right: 94px;
+  } 
+ 
+  .footer-social-list-item-link-block {
+       background-color: rgba(255, 255, 255, 0.1);
+    
+  .footer-social-list-item-link:hover &,
+  .footer-social-list-item-link:focus & {
+    background-color: $svg-color-accent;
+  }
+}
+  .footer-social-list-link-icons {
+    fill: $title-dark-theme-color;
+    }
+  
+  

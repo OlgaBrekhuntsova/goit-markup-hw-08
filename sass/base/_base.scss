@@ -10,6 +10,15 @@ html {
 
 body {
   background-color: #E5E5E5;
+
+}
+.body-wrapper {
+  @media screen and (min-width:1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    background-color: #ffffff;
+  }
 }
 
   img {

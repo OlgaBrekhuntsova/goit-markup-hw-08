@@ -13,25 +13,35 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="header portfolio-header">
+    <header class="header">
       <div class="container">
+        <div class="header-wrapper">
+        <a class="logo link" href="./index.html">
+          <span lang="en">
+            <span class="logo-accent">Web</span> Studio</span
+          ></a>
+<button class="burger-btn" type="button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+    <svg class="header-burger-wrapper">
+    <use  class="header-burger-icon" href="./images/icons/sprite.svg#icon-burger"></use>
+    <use class="header-burger-close-icon" href="./images/icons/sprite.svg#icon-burger-close"></use>
+  </svg> 
+</button>
+</div>
+<div class="menu-wrapper" data-menu>
         <nav class="navigation">
-          <a class="logo link" href="./index.html">
-            <span lang="en"
-              ><span class="logo-accent">Web</span> Studio</span
-            ></a
-          >
-          <ul class="nav-list list">
+                  <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link link current" href="./portfolio.html"
-                >Портфолио</a
+              <a class="nav-list-link link" href="./index.html"
+                > <span class="nav-list-link-text">Студия</span></a
               >
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="./contacts.html">Контакты</a>
+              <a class="nav-list-link link" href="./portfolio.html"
+                > <span class="current nav-list-link-text">Портфолио</span></a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./contacts.html"><span class="nav-list-link-text">Контакты</span></a>
             </li>
           </ul>
         </nav>
@@ -64,7 +74,6 @@
         </address>
       </div>
     </header>
-
     <main class="portfolio">
       <!--HERO секция-->
       <section class="hero-portfolio">
@@ -479,5 +488,7 @@
           </div>
       </div>
     </footer>
+     <!-- Скрипт для бургера -->
+     <script src="./js/menu.js"></script>
   </body>
-</html>
+    </html>

@@ -8,9 +8,20 @@ html {
               box-sizing: inherit;
   }
 
+body {
+  background-color: #E5E5E5;
+}
+
   img {
     display: block;
+    height: auto;
   }
+ button {
+   border: none;
+   background-color: transparent;
+   padding: 0px;
+   outline: none;
+ }
 
 button:hover,
 button:focus,

@@ -1,0 +1,40 @@
+
+   .header-burger-close-icon {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;   
+   }
+
+      .burger-btn {
+        display: none;
+        @media screen and (max-width:767px) {
+        display: flex;
+        background-color: transparent;
+            
+        &.is-open {
+          .header-burger-icon { 
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none; 
+
+        }
+        .header-burger-close-icon { 
+          opacity: 1;
+          visibility: visible;
+          pointer-events: visible;
+        }
+      }
+    }
+  }
+      
+   .header-burger-wrapper {
+        width: 40px;
+   height: 40px;
+  fill: $burger-and-close-btn;
+  transition-property: fill;
+              @include animation ();
+            
+   .burger-btn:hover & {
+    fill: $svg-color-accent;
+       }
+     }

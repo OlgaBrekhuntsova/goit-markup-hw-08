@@ -141,12 +141,17 @@
                 href=""
                 aria-label="ссылка на портфолио десктопных приложений"
               >
+              <picture>
+                <source srcset="./images/specialization/desktop-desktop-applications@1x.webp 1x,
+                ./images/specialization/desktop-desktop-applications@2x.webp 2x" type="image/webp"/>
                 <img
-                  src="./images/specialization/desktop-applications.jpg"
-                  alt=""
+                srcset="./images/specialization/desktop-desktop-applications@2x.jpg 2x"
+                  src="./images/specialization/desktop-desktop-applications@1x.jpg"
+                  alt="Ноутбук"
                   width="370"
                   height="294"
                 />
+              </picture>           
                 <p class="subtitle">Десктопные приложения</p>
               </a>
             </li>
@@ -157,12 +162,17 @@
                 href=""
                 aria-label="ссылка на портфолио мобильных приложений"
               >
+              <picture>
+                <source srcset="./images/specialization/desktop-mobile-applications@1x.webp 1x,
+                ./images/specialization/desktop-mobile-applications@2x.webp 2x" type="image/webp"/>
                 <img
-                  src="./images/specialization/mobile-applications.jpg"
-                  alt=""
+                srcset="./images/specialization/desktop-mobile-applications@2x.jpg 2x"
+                  src="./images/specialization/desktop-mobile-applications@1x.jpg"
+                  alt="Смартфон"
                   width="370"
                   height="294"
                 />
+              </picture>  
                 <p class="subtitle">Мобильные приложения</p>
               </a>
             </li>
@@ -173,35 +183,54 @@
                 href=""
                 aria-label="ссылка на портфолио дизайна"
               >
+              <picture>
+                <source srcset="./images/specialization/desktop-design-solutions@1x.webp 1x,
+                ./images/specialization/desktop-design-solutions@2x.webp 2x" type="image/webp"/>
                 <img
-                  src="./images/specialization/design-solutions.jpg"
-                  alt=""
+                srcset="./images/specialization/desktop-design-solutions@2x.jpg 2x"
+                  src="./images/specialization/desktop-design-solutions@1x.jpg"
+                  alt="Дизайн страницы сайта"
                   width="370"
                   height="294"
                 />
-                <p class="subtitle">Дизайнерские решения</p>
+              </picture>  
+              <p class="subtitle">Дизайнерские решения</p>
               </a>
             </li>
           </ul>
         </div>
       </section>  
       <!--Секция команды-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
+                <picture>
+                <source srcset="./images/team/mobile-product-designer@1x.webp 1x,
+                ./images/team/mobile-product-designer@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                <source srcset="./images/team/mobile-product-designer@1x.jpg 1x,
+                ./images/team/mobile-product-designer@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./images/team/desktop-product-designer@1x.webp 1x,
+                ./images/team/desktop-product-designer@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/desktop-product-designer@1x.jpg 1x,
+                ./images/team/desktop-product-designer@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/tablet-product-designer@1x.webp 1x,
+                ./images/team/tablet-product-designer@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                <source srcset="./images/team/tablet-product-designer@1x.jpg 1x,
+                ./images/team/tablet-product-designer@2x.jpg 2x" media="(min-width: 768px)"/>
+               
+                <img
                 class="team-list-item-photo"
-                src="./images/team/product-designer.jpg"
-                alt="фотография продакт дизайнера"
-                width="270"
-                height="260"
-              />
-              <h3 class="subtitle">Николай Кучеренко</h3>
+                  src="./images/team/mobile-product-designer@1x.jpg"
+                  alt="фотография продакт дизайнера"
+                />
+              </picture>  
+            
+               <h3 class="subtitle">Николай Кучеренко</h3>
               <p class="description" lang="en">Product Designer</p>
               <!--Блок социальных ссылок-->
-              <!-- <ul class="team-list-item-social-list social-list list">
+              <ul class="team-list-item-social-list social-list list">
                 <li class="team-list-item-social-list-item social-list-item">
                   <a
                     class="team-list-item-social-list-link link"
@@ -241,17 +270,30 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile-frontend-developer@1x.webp 1x,
+                ./images/team/mobile-frontend-developer@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                <source srcset="./images/team/mobile-frontend-developer@1x.jpg 1x,
+                ./images/team/mobile-frontend-developer@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./images/team/desktop-frontend-developer@1x.webp 1x,
+                ./images/team/desktop-frontend-developer@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/desktop-frontend-developer@1x.jpg 1x,
+                ./images/team/desktop-frontend-developer@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/tablet-frontend-developer@1x.webp 1x,
+                ./images/team/tablet-frontend-developer@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                <source srcset="./images/team/tablet-frontend-developer@1x.jpg 1x,
+                ./images/team/tablet-frontend-developer@2x.jpg 2x" media="(min-width: 768px)"/>
+          
+                <img
                 class="team-list-item-photo"
-                src="./images/team/frontend-developer.jpg"
-                alt="фотография фронтэнд разработчика"
-                width="270"
-                height="260"
-              />
-              <h3 class="subtitle">Ольга Иванова</h3>
-              <p class="description" lang="en">Frontend Developer</p> -->
+                  src="./images/team/mobile-frontend-developer@1x.jpg"
+                  alt="фотография фронтэнд разработчика"
+                />
+              </picture>  
+               <h3 class="subtitle">Ольга Иванова</h3>
+              <p class="description" lang="en">Frontend Developer</p>
               <!--Блок социальных ссылок-->
-              <!-- <ul class="team-list-item-social-list social-list list">
+              <ul class="team-list-item-social-list social-list list">
                 <li class="team-list-item-social-list-item social-list-item">
                   <a
                     class="team-list-item-social-list-link link"
@@ -291,17 +333,30 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile-marketing@1x.webp 1x,
+                ./images/team/mobile-marketing@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                <source srcset="./images/team/mobile-marketing@1x.jpg 1x,
+                ./images/team/mobile-marketing@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./images/team/desktop-marketing@1x.webp 1x,
+                ./images/team/desktop-marketing@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/desktop-marketing@1x.jpg 1x,
+                ./images/team/desktop-marketing@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/tablet-marketing@1x.webp 1x,
+                ./images/team/tablet-marketing@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                <source srcset="./images/team/tablet-marketing@1x.jpg 1x,
+                ./images/team/tablet-marketing@2x.jpg 2x" media="(min-width: 768px)"/>
+              
+                <img
                 class="team-list-item-photo"
-                src="./images/team/marketing.jpg"
-                alt="фотография маркетинг менеджера"
-                width="270"
-                height="260"
-              />
-              <h3 class="subtitle">Андрей Шевченко</h3>
+                  src="./images/team/mobile-marketing@1x.jpg"
+                  alt="фотография маркетинг менеджера"
+                />
+              </picture>  
+               <h3 class="subtitle">Андрей Шевченко</h3>
               <p class="description" lang="en">Marketing</p>
               <!--Блок социальных ссылок-->
-              <!-- <ul class="team-list-item-social-list social-list list">
+              <ul class="team-list-item-social-list social-list list">
                 <li class="team-list-item-social-list-item social-list-item">
                   <a
                     class="team-list-item-social-list-link link"
@@ -341,17 +396,30 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
+              <picture>
+                <source srcset="./images/team/mobile-UI-designer@1x.webp 1x,
+                ./images/team/mobile-UI-designer@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                <source srcset="./images/team/mobile-UI-designer@1x.jpg 1x,
+                ./images/team/mobile-UI-designer@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./images/team/desktop-UI-designer@1x.webp 1x,
+                ./images/team/desktop-UI-designer@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/desktop-UI-designer@1x.jpg 1x,
+                ./images/team/desktop-UI-designer@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/team/tablet-UI-designer@1x.webp 1x,
+                ./images/team/tablet-UI-designer@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                <source srcset="./images/team/tablet-UI-designer@1x.jpg 1x,
+                ./images/team/tablet-UI-designer@2x.jpg 2x" media="(min-width: 768px)"/>
+    
+                <img
                 class="team-list-item-photo"
-                src="./images/team/UI-designer.jpg"
-                alt="фотография ю-ай дизайнера"
-                width="270"
-                height="260"
-              />
+                  src="./images/team/mobile-UI-designer@1x.jpg"
+                  alt="фотография ю-ай дизайнера"
+                />
+              </picture>  
               <h3 class="subtitle">Иван Николаев</h3>
               <p class="description" lang="en">UI Designer</p>
               <!--Блок социальных ссылок-->
-              <!-- <ul class="team-list-item-social-list social-list list">
+              <ul class="team-list-item-social-list social-list list">
                 <li class="team-list-item-social-list-item social-list-item">
                   <a
                     class="team-list-item-social-list-link link"
@@ -392,7 +460,7 @@
             </li>
           </ul>
         </div>
-      </section>  --> 
+      </section>  
       <!--Секция постоянных клиентов-->
       <!-- <section class="customers">
         <div class="container">

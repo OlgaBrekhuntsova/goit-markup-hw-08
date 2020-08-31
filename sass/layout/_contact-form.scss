@@ -18,7 +18,9 @@
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  @media screen and (min-width: 1200px) {
+  line-height: 1.15;}
   letter-spacing: 0.03em;
   color: $title-light-theme-color;
   }
@@ -112,8 +114,12 @@
   }
   
       .agreement {
-  line-height: 1.71px;
-  
+          font-size: 12px;
+          line-height: 1.167;
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: 1.71;}
+ 
    a {
     color: $accent-color;
   }

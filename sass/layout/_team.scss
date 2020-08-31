@@ -35,7 +35,7 @@
 .team-list-item-photo {
   display: block;
   width: 100%;
-  min-width: 240px;
+  min-width: 210px;
   margin-bottom: 30px;
 }
 .team-list-item-social-list {
@@ -88,8 +88,7 @@
       padding-bottom: 94px;
     }
     }
-  
-     .team-list-item {
+       .team-list-item {
     &:not(:last-child) {
       margin-right: 30px;
     }

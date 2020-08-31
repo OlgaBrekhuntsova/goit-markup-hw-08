@@ -1,49 +1,70 @@
 /*FEATURES SECTION*/
+
 .features {
-.subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    color: $title-light-theme-color;
-  }
   .container {
-    padding-top: 94px;
-    padding-bottom: 47px;
+     padding-top: 60px;
+     padding-bottom: 60px;
+        }
+        .subtitle {
+          text-align: center;
+                  }
+                  .description {
+                      line-height: 1.71;
+                      letter-spacing: 0.03em;
+                      margin-top: 0px;
+                    margin-bottom: 0px;
+                  }
   }
-  .description {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-  .features-list {
-     display: flex;
-             align-items: center;
-            justify-content: space-between;
+.features-list-item-block {
+  display: flex;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $rectangle-background-color;
+  margin-bottom: 30px;
+    justify-content: center;
+ align-items: center;
   }
 
-  .features-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .features-list-item-block {
-    display: flex;
-    height: 120px;
-    border-radius: 4px;
-    background-color: $rectangle-background-color;
-    margin-bottom: 30px;
-            justify-content: center;
-            align-items: center;
-    }
-  
   .features-list-item-block-icon {
     width: 70px;
     height: 70px;
     fill: $title-light-theme-color;
   }
- 
+  @media screen and (max-width:767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+  @media screen and (min-width:768px) {
+    .features-list {
+      display: flex;
+     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+   .features-list-item {
+     width: 354px;
+
+     @media screen and (max-width:1199px) {    
+     &:nth-child(-n+2) {
+       margin-bottom: 30px;
+    }
+   }
+   }
+  }
+
+@media screen and (min-width:1200px) {
+.features {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+}
+.features-list {
+flex-wrap: nowrap;
+}
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+ } 
   

@@ -739,6 +739,17 @@ body {
   margin-left: 10px;
 }
 
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #212121;
+}
+
 /*HEADER*/
 .header .container {
   position: relative;
@@ -1174,20 +1185,13 @@ body {
 }
 
 /*FEATURES SECTION*/
-.features .subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 0px;
-  color: #212121;
+.features .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.features .container {
-  padding-top: 94px;
-  padding-bottom: 47px;
+.features .subtitle {
+  text-align: center;
 }
 
 .features .description {
@@ -1195,16 +1199,6 @@ body {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.features-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-list-item-block {
@@ -1223,7 +1217,50 @@ body {
   fill: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .features-list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features .container {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .features-list {
+    flex-wrap: nowrap;
+  }
+  .features-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /*SPECIALIZATION SECTION*/
+@media screen and (max-width: 1199px) {
+  .specialization {
+    display: none;
+  }
+}
+
 .specialization .container {
   padding-top: 47px;
   padding-bottom: 94px;

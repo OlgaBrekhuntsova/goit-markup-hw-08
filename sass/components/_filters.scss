@@ -1,45 +1,56 @@
-.filters-list {
+  .filters-list {
     display: flex;
+    flex-wrap: wrap;
+  justify-content: flex-start;}
+  .filter-label {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    @media screen and (max-width: 767px) {
+        & {
+        margin-bottom: 15px;
+  }
+}
+
+    display: block;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-light-theme-color;
+    background-color: $rectangle-background-color;
+    transition-property: background-color box-shadow color;
+    @include animation ();
+  &:hover,
+  &:focus {
+    background-color: $svg-color-accent;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+    color: $title-dark-theme-color;
+  }
+  }
+  .filter-btn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+   }
+
+@media screen and (min-width: 768px) {
+.filters-list {
     justify-content: center;
     align-items: center;
     }
-    
-    .filter-label {
-      display: block;
-      padding-top: 6px;
-      padding-right: 22px;
-      padding-bottom: 6px;
-      padding-left: 22px;
-      border-radius: 4px;
-      border: none;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.62;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $title-light-theme-color;
-      background-color: $rectangle-background-color;
-      transition-property: background-color box-shadow color;
-      @include animation ();
-              &:not(:last-child) {
-                margin-right: 8px;
-              }
-    &:hover,
-    &:focus {
-      background-color: $svg-color-accent;
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 3px 1px rgba(0, 0, 0, 0.1);
-      color: $title-dark-theme-color;
-    }
-    }
-    .filter-btn {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-     }
+  }
     

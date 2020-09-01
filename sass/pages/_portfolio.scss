@@ -1,6 +1,23 @@
 /*PORTFOLIO*/
+.portfolio-header .container {
+  @media screen and (max-width: 767px) {
+  border-bottom: 1px solid $header-border-color;
+}}
+@media screen and (min-width: 1200px) {
 .portfolio-header {
   border-bottom: 1px solid $header-border-color;
+   }
+   .portfolio-header,
+   .hero-portfolio,
+   .portfolio-filters,
+   .portfolio-projects, 
+   .portfolio .footer {
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
+  background-color: $title-dark-theme-color;
+}
+
 }
 .portfolio h2 {
   margin-top: 0px;
@@ -8,21 +25,40 @@
 }
 .portfolio-filters {
  .container {
-  padding-top: 93px;
-  padding-bottom: 25px;
+   padding-top: 60px;
+   padding-bottom: 20px;
+   @media screen and (min-width: 768px) {
+   padding-bottom: 15px;
+  }
+   @media screen and (min-width: 1200px) {
+    padding-top: 93px;
+    padding-bottom: 25px;
+  }
 }
 }
 
 .portfolio-projects {
  .container {
-  padding-top: 25px;
-  padding-bottom: 94px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+   }
+    @media screen and (min-width: 1200px) {
+     padding-top: 25px;
+     padding-bottom: 94px;
+   }
 }
 }
-.portfolio-projects-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-projects-list-item {
+  width: 100%;
+  @media screen  and (max-width: 767px) {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  }
 }
+
 .portfolio-projects-list-link {
   box-sizing: border-box;
   background: $title-dark-theme-color;
@@ -34,17 +70,6 @@
     0px 1px 1px rgba(0, 0, 0, 0.12);
     }
   }
-
-.portfolio-projects-list-item {
-  width: calc(94.87% / 3);
-  &:not(:nth-child(3n)) {
-    margin-right: 2.565%;
-  }
-  &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-  }
-}
-
 .portfolio-projects-list-link-item {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -82,6 +107,8 @@
 }
 
 .projects-name-description {
+  display: none;
+@media screen  and (min-width: 1200px) {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,4 +133,32 @@
     transform: translateY(0);
   }
 }
-
+}
+@media screen and (min-width: 768px) {
+  .portfolio-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-projects-list-item {
+    width: calc(96% / 2);
+    @media screen  and (max-width: 1199px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 4%;
+    }
+    &:nth-last-child(n+3) {
+      margin-bottom: 30px;
+    }
+  }
+}
+}
+  @media screen and (min-width: 1200px) {
+  .portfolio-projects-list-item {
+    width: calc(94.87% / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 2.565%;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+  }

@@ -22,8 +22,9 @@
   @media screen and (max-width: 480px) {
   left: 15px;
   right: 15px;
-  top:93px;
-  transform: scale(1);}
+  top:50%;
+  transform: translateY(-50%) scale(1);
+  // top:93px;
   transition-property: transform;
   @include animation ();
   padding: 40px;

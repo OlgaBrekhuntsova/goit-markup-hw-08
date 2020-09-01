@@ -34,7 +34,7 @@
   transition-property: fill;
               @include animation ();
             
-   .burger-btn:focus & {
+   .burger-btn:hover & {
     fill: $svg-color-accent;
        }
      }

@@ -491,7 +491,7 @@ body {
   transition-delay: 250ms;
 }
 
-.burger-btn:focus .header-burger-wrapper {
+.burger-btn:hover .header-burger-wrapper {
   fill: #2196f3;
 }
 
@@ -587,17 +587,17 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 477px) {
   .form-layout {
     left: 15px;
     right: 15px;
-    top: 93px;
-    transform: scale(1);
+    top: 50%;
+    transform: translateY(-50%) scale(1);
   }
 }
 
 .backdrop.is-hidden .form-layout {
-  transform: scale(0.8);
+  transform: translateY(-50%) scale(0.8);
 }
 
 .modal-close-btn {

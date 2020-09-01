@@ -471,7 +471,7 @@ body {
   transition-delay: 250ms;
 }
 
-.burger-btn:focus .header-burger-wrapper {
+.burger-btn:hover .header-burger-wrapper {
   fill: #2196f3;
 }
 

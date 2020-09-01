@@ -19,11 +19,11 @@
 }
 .form-layout {
   position:absolute;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 477px) {
   left: 15px;
   right: 15px;
   top:50%;
-  transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);}
   // top:93px;
   transition-property: transform;
   @include animation ();
@@ -36,7 +36,6 @@
     transform: translateY(-50%) scale(0.8);
     }  
  }
-}
  .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -66,7 +65,7 @@
 
 @media screen and (min-width: 480px) {
   .form-layout {     
-      top:50%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(1);
        width: 450px;

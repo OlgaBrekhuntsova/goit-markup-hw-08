@@ -491,7 +491,7 @@ body {
   transition-delay: 250ms;
 }
 
-.burger-btn:hover .header-burger-wrapper {
+.burger-btn:focus .header-burger-wrapper {
   fill: #2196f3;
 }
 
@@ -1454,18 +1454,22 @@ body {
   background-color: none;
 }
 
-.team-list-item-social-list-link:hover .team-social-list-link-block,
-.team-list-item-social-list-link:focus .team-social-list-link-block {
-  background-color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .team-list-item-social-list-link:hover .team-social-list-link-block,
+  .team-list-item-social-list-link:focus .team-social-list-link-block {
+    background-color: #2196f3;
+  }
 }
 
 .team-social-list-link-icons {
   fill: #afb1b8;
 }
 
-.team-list-item-social-list-link:hover .team-social-list-link-icons,
-.team-list-item-social-list-link:focus .team-social-list-link-icons {
-  fill: #ffffff;
+@media screen and (min-width: 1200px) {
+  .team-list-item-social-list-link:hover .team-social-list-link-icons,
+  .team-list-item-social-list-link:focus .team-social-list-link-icons {
+    fill: #ffffff;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1674,9 +1678,11 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-list-item-link:hover .footer-social-list-item-link-block,
-.footer-social-list-item-link:focus .footer-social-list-item-link-block {
-  background-color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .footer-social-list-item-link:hover .footer-social-list-item-link-block,
+  .footer-social-list-item-link:focus .footer-social-list-item-link-block {
+    background-color: #2196f3;
+  }
 }
 
 .footer-social-list-link-icons {

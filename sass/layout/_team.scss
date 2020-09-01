@@ -43,18 +43,22 @@
 }
 .team-social-list-link-block {
   background-color: none;
+  @media screen and (min-width:1200px) {
 .team-list-item-social-list-link:hover &,
 .team-list-item-social-list-link:focus & {
  background-color: $svg-color-accent;  
          }
      }
+    }
 
 .team-social-list-link-icons {
   fill: $svg-color;
+  @media screen and (min-width:1200px) {
      .team-list-item-social-list-link:hover &,
      .team-list-item-social-list-link:focus & {
          fill: $title-dark-theme-color;
         }
+      }
      }
 
      @media screen and (min-width:768px){

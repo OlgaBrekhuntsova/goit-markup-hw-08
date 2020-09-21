@@ -1,42 +1,51 @@
- /* MODAL WINDOW */
- .backdrop {
+/* MODAL WINDOW */
+body {
+  overflow: hidden;
+  &.is-unlocked {
+    overflow: visible;
+  }
+}
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
- z-index: 100;
- opacity: 1;
+  z-index: 100;
+  opacity: 1;
   transition-property: opacity, visibility;
-  @include animation ();
- 
+  @include animation();
+
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;   
-      }
+    pointer-events: none;
+  }
 }
 .form-layout {
-  position:absolute;
+  position: absolute;
   @media screen and (max-width: 477px) {
-  left: 15px;
-  right: 15px;
-  top:50%;
-  transform: translateY(-50%) scale(1);}
+    left: 15px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+  }
   // top:93px;
   transition-property: transform;
-  @include animation ();
+  @include animation();
   padding: 40px;
   background: $title-dark-theme-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-    
+
   .backdrop.is-hidden & {
     transform: translateY(-50%) scale(0.8);
-    }  
- }
- .modal-close-btn {
+  }
+}
+
+.modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -47,38 +56,39 @@
   outline: none;
   width: 30px;
   height: 30px;
-}  
+}
 
 .close-icon {
   display: block;
   width: 18px;
   height: 18px;
- margin: auto;
+  margin: auto;
   fill: $burger-and-close-btn;
-  transition-property: fill; 
-  @include animation ();
-  
-.modal-close-btn:hover &,
-.modal-close-btn:focus & {
-  fill: $svg-color-accent;
-}}
+  transition-property: fill;
+  @include animation();
 
-@media screen and (min-width: 480px) {
-  .form-layout {     
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-       width: 450px;
-       height: 609px;  
-        
-  .backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(0.8);
-  }    
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: $svg-color-accent;
   }
 }
- @media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 480px) {
   .form-layout {
-        width: 528px;
-       height: 581px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+    height: 609px;
+
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-layout {
+    width: 528px;
+    height: 581px;
   }
 }

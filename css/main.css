@@ -348,7 +348,7 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 @media screen and (min-width: 1200px) {
@@ -554,6 +554,14 @@ body {
 }
 
 /* MODAL WINDOW */
+body {
+  overflow: hidden;
+}
+
+body.is-unlocked {
+  overflow: visible;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -866,6 +874,7 @@ body {
     left: 0px;
     top: 100%;
     z-index: 1;
+    overflow: auto;
     transform: translateY(-100%);
     padding-top: 20px;
     padding-bottom: 52px;
@@ -919,7 +928,7 @@ body {
   display: block;
   bottom: 0;
   left: 0;
-  content: "";
+  content: '';
   width: 100%;
   height: 4px;
   background: #2196f3;

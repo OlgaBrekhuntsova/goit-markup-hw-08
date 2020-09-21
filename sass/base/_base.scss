@@ -1,19 +1,19 @@
 html {
-               box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-              box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-  background-color: #E5E5E5;
-
+  background-color: #e5e5e5;
 }
+
 .body-wrapper {
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
@@ -21,16 +21,16 @@ body {
   }
 }
 
-  img {
-    display: block;
-    height: auto;
-  }
- button {
-   border: none;
-   background-color: transparent;
-   padding: 0px;
-   outline: none;
- }
+img {
+  display: block;
+  height: auto;
+}
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  outline: none;
+}
 
 button:hover,
 button:focus,
@@ -40,7 +40,5 @@ textarea:hover,
 textarea:focus,
 label:hover,
 label:focus {
-cursor: pointer;
+  cursor: pointer;
 }
-
-  
